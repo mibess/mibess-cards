@@ -1,0 +1,13 @@
+<div class="card {{ card.model }} ff-roboto-mono" [ngClass]="cardWidth()">
+  <img src="../../../../assets/images/{{ card.model }}.png" alt="Model Image" />
+  <p class="content">{{ card.content }}</p>
+  <p class="author" style="font-weight: bold">{{ card.author }}</p>
+  <div class="actions">
+    <button class="button-update">
+      <img src="../../../../assets/images/update-icon.png" alt="Icon Update" />
+    </button>
+    <button class="button-remove">
+      <img src="../../../../assets/images/remove-icon.png" alt="Icon Remove" />
+    </button>
+  </div>
+</div>
