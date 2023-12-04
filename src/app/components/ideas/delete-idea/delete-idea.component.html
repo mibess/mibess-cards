@@ -1,0 +1,18 @@
+<section class="container delete-ideas ff-inter">
+  <div class="modal">
+    <p>
+      O card {{ idea.content }} escrito por <b>{{ idea.author }} </b> será
+      deletado!!
+    </p>
+    <h3 style="color: red">Confirma?</h3>
+    <div class="actions">
+      <button class="button button-delete" (click)="deleteCard()">
+        Excluir
+      </button>
+      <button class="button button-cancel" (click)="cancelDelete()">
+        Cancelar
+      </button>
+    </div>
+  </div>
+  <div class="overlay"></div>
+</section>

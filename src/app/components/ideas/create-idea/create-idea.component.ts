@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Idea } from '../idea';
+import { IdeaService } from '../idea.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-idea',
@@ -6,14 +9,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-idea.component.scss'],
 })
 export class CreateIdeaComponent {
-  idea = {
-    id: 1,
-    content: 'Idea about something',
-    author: 'Mibess',
-    model: 'model2',
+  idea: Idea = {
+    content: '',
+    author: '',
+    model: '',
+    createdAt: '',
   };
 
+  constructor(private service: IdeaService, private router: Router) {}
+
   createIdea() {
-    alert('Hello');
+    this.service.createCard(this.idea).subscribe(() => {
+      this.router.navigate(['list-idea']);
+    });
   }
 }

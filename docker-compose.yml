@@ -1,0 +1,12 @@
+networks:
+  card-network:
+    driver: bridge
+
+services:
+  card-frontend:
+    build: .
+    image: card-frontend:v1
+    ports:
+      - 4200:4200
+    networks:
+      - card-network

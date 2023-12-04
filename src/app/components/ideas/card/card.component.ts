@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Idea } from '../idea';
 
 @Component({
   selector: 'app-card',
@@ -6,11 +7,12 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent {
-  @Input()
-  card = {
+  @Input() card: Idea = {
+    code: '',
     content: 'I love Angular',
     author: 'Mibess',
     model: 'model3',
+    createdAt: '',
   };
 
   cardWidth(): string {
