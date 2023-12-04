@@ -67,10 +67,10 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "mibess-cards:build:production"
+              "buildTarget": "mibess-cards:build:production"
             },
             "development": {
-              "browserTarget": "mibess-cards:build:development"
+              "buildTarget": "mibess-cards:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mibess-cards:build"
+            "buildTarget": "mibess-cards:build"
           }
         },
         "test": {
