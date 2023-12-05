@@ -1,4 +1,27 @@
 <section class="container">
+  <div
+    class="mural"
+    *ngIf="listCards && listCards.length > 0; else noListCards"
+  >
+    <button class="button" routerLink="/create-idea">
+      Criar um Pensamento
+    </button>
+    <div *ngFor="let card of listCards">
+      <app-card [card]="card"></app-card>
+    </div>
+  </div>
+</section>
+
+<ng-template #noListCards>
+  <div class="ff-inter no-cards">
+    <p style="margin-bottom: 10px">Que tal criar seu primeiro pensamento!?</p>
+    <button class="button" routerLink="/create-idea">
+      Criar um Pensamento
+    </button>
+  </div>
+</ng-template>
+
+<section class="container" style="display: none">
   <header class="header-container d-flex">
     <h2 class="ff-inter">Mural</h2>
     <button routerLink="/create-idea" class="button">Add Idea</button>
@@ -13,9 +36,3 @@
     </div>
   </div>
 </section>
-
-<ng-template #noListCards>
-  <div class="ff-inter no-cards">
-    <p>Que tal criar seu primeiro pensamento!?</p>
-  </div>
-</ng-template>

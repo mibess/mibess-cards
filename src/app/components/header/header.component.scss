@@ -1,3 +1,33 @@
+.new-header {
+  padding: 5px 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-header_background {
+  background-image: url(/assets/images/background-header-transparent.png);
+  background-size: cover;
+
+  border-top: 0px;
+  border-bottom: 2px solid gray;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: dashed;
+}
+
+.new-header_pensamentos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2rem;
+  width: 100%;
+}
+
+.new-header_image {
+  padding: 2rem;
+}
+
 .header {
   background: url(/assets/images/background-header.png);
   background-size: cover;
@@ -51,6 +81,15 @@
 }
 
 @media (max-width: 576px) {
+  .new-header {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .new-header_image {
+    width: 325px;
+  }
+
   .header .logo {
     padding: 2rem;
   }

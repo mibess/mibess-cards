@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class IdeaService {
   private readonly apiBaseUrl = environment.API_BASE_URL + '/cards';
+  //private readonly apiBaseUrl = 'http://192.168.15.18:8080' + '/cards';
 
   constructor(private http: HttpClient) {}
 

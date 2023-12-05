@@ -6,10 +6,11 @@
 
   <div class="actions">
     <button class="button-update" routerLink="/edit-idea/{{ card.code }}">
-      <img src="../../../../assets/images/update-icon.png" alt="Icon Update" />
+      <lucide-icon name="file-edit"></lucide-icon>
     </button>
+
     <button class="button-remove" routerLink="/delete-idea/{{ card.code }}">
-      <img src="../../../../assets/images/remove-icon.png" alt="Icon Remove" />
+      <lucide-icon name="trash-2" style="color: red"></lucide-icon>
     </button>
   </div>
 </div>

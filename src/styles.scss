@@ -13,20 +13,6 @@
   font-family: "Roboto Mono", monospace;
 }
 
-h1 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
-h2 {
-  color: #154580;
-  font-weight: bold;
-  font-size: 2rem;
-  text-align: center;
-}
-
 .header-container {
   margin: 1rem auto 2rem;
 }
@@ -41,20 +27,20 @@ h2 {
 }
 
 .button {
-  background: #154580;
+  background: blueviolet;
   color: #ffffff;
+  font-weight: bold;
+  font-size: medium;
   max-width: 270px;
   width: 250px;
   padding: 1rem;
-  margin: 0 auto;
-  border: 2px solid #154580;
+  border: 2px solid blueviolet;
   border-radius: 10px;
   transition: 0.5s ease;
 }
 
 .button:hover {
-  border: 2px solid #84eec1;
-  color: #84eec1;
+  border: 2px solid rgb(202, 164, 238);
   cursor: pointer;
 }
 

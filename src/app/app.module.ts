@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CreateIdeaComponent } from './components/ideas/create-idea/create-idea.component';
@@ -12,6 +13,8 @@ import { CardComponent } from './components/ideas/card/card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DeleteIdeaComponent } from './components/ideas/delete-idea/delete-idea.component';
 import { EditIdeaComponent } from './components/ideas/edit-idea/edit-idea.component';
+
+import { LucideAngularModule, FileEdit, Trash2 } from 'lucide-angular';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,13 @@ import { EditIdeaComponent } from './components/ideas/edit-idea/edit-idea.compon
     DeleteIdeaComponent,
     EditIdeaComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    LucideAngularModule.pick({ FileEdit, Trash2 }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

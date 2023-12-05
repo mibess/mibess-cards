@@ -1,15 +1,12 @@
 footer {
-  background-image: url(/assets/images/background-footer.png);
+  background-image: url(/assets/images/background-header.jpg);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "copyright-text LogoRodape .";
   align-items: center;
   padding: 1rem 2rem;
 }
 
 .copyright-text {
+  width: 100%;
   justify-self: center;
   grid-area: copyright-text;
 }
