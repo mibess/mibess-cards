@@ -1,5 +1,5 @@
 # Build do Projeto
-#FROM node:17 AS builder
+#FROM node:18.19.0 AS builder
 #WORKDIR /app
 #COPY . .
 #RUN npm install
@@ -10,10 +10,10 @@
 #CMD ["nginx", "-g", "daemon off;"]
 
 # Apenas executa o projeto
-FROM node:17
+FROM node:18.19.0
 WORKDIR /app
 COPY . .
 RUN npm install
 RUN npm run build
-EXPOSE 4200
-CMD ["npm", "start", "--", "--host", "0.0.0.0", "--port", "4200"]
+#CMD ["npm", "start", "--", "--host", "0.0.0.0", "--port", "4200", "--disable-host-check"]
+CMD ["npm", "start", "--", "--host", "0.0.0.0", "--disable-host-check"]

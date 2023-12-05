@@ -8,5 +8,7 @@ services:
     image: card-frontend:v1
     ports:
       - 4200:4200
+    environment:
+      API_BASE_URL: "http://localhost:8080"
     networks:
       - card-network
