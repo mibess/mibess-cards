@@ -1,0 +1,8 @@
+routes:
+  - src: /.*
+    headers:
+      - key: Access-Control-Allow-Origin
+        value: "*"
+    status: 200
+    force: true
+    dest: /index.html
