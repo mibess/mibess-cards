@@ -5,9 +5,13 @@
 Mibess Cards é uma simples aplicação feita com Angular para gerenciamento de pensamentos. Nela podemos cadastrar, editar e excluir um pensamento.
 
 **Requisitos**
+
 [Angular CLI](https://angular.dev/) versão >= 17.0.5.
+
 [Node](https://nodejs.org/en) versão >= 20.10.0.
+
 [Cards API](https://github.com/mibess/card-api) Aplicação backend que serve este frontend.
+
 **Obs:- Esse é apenas o frontend da aplicação!**
 Para baixar a versão completa com o Frontend e Backend juntos baixe esse repositório: [Cards MS](https://github.com/mibess/cards-ms)
 
