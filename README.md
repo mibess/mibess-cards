@@ -30,7 +30,7 @@ Para baixar a versão completa com o Frontend e Backend juntos baixe esse reposi
 1 - Clone o repositório do GitHub
 
 ```
-https://github.com/mibess/mibess-cards.git
+git clone https://github.com/mibess/mibess-cards.git
 ```
 
 2 - Entre na pasta da aplicação e instale o npm.
@@ -43,8 +43,10 @@ cd mibess-cards
 npm install
 ```
 
-3 - Execute o servidor
-
+3 - Configure as variáveis de ambiente e execute o servidor
+```
+ng g environments
+```
 ```
 ng serve
 ```
