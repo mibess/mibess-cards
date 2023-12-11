@@ -1,27 +1,51 @@
-# MibessCards
+# Mibess Cards
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+## _Compartilhamento de Pensamentos_
 
-## Development server
+Mibess Cards é uma simples aplicação feita com Angular para gerenciamento de pensamentos. Nela podemos cadastrar, editar e excluir um pensamento.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**Requisitos**
+[Angular CLI](https://angular.dev/) versão >= 17.0.5.
+[Node](https://nodejs.org/en) versão >= 20.10.0.
+[Cards API](https://github.com/mibess/card-api) Aplicação backend que serve este frontend.
+**Obs:- Esse é apenas o frontend da aplicação!**
+Para baixar a versão completa com o Frontend e Backend juntos baixe esse repositório: [Cards MS](https://github.com/mibess/cards-ms)
 
-## Code scaffolding
+### Screenshots
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Header](./src/assets/screenshots/header.png)
+![Cadastro de Pensamento](./src/assets/screenshots/cadastrar-card.png)
+![Lista de Pensamentos](./src/assets/screenshots/lista-de-cards.png)
 
-## Build
+**Acesse o Projeto em Produção no link abaixo**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Cards -> https://cards-mibess.netlify.app/
 
-## Running unit tests
+# Instalação
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1 - Clone o repositório do GitHub
 
-## Running end-to-end tests
+```
+https://github.com/mibess/mibess-cards.git
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2 - Entre na pasta da aplicação e instale o npm.
 
-## Further help
+```
+cd mibess-cards
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+npm install
+```
+
+3 - Execute o servidor
+
+```
+ng serve
+```
+
+4 - Acesse a página
+http://localhost:4200
+
+### Agora você deve estar pronto para usar o Mibess Cards localmente em sua máquina!
