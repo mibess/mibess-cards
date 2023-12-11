@@ -45,9 +45,6 @@ npm install
 
 3 - Configure as variáveis de ambiente e execute o servidor
 ```
-ng g environments
-```
-```
 ng serve
 ```
 
