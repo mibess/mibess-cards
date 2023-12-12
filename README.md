@@ -23,7 +23,7 @@ Para baixar a versão completa com o Frontend e Backend juntos baixe esse reposi
 
 **Acesse o Projeto em Produção no link abaixo**
 
-### Cards -> https://cards-mibess.netlify.app/
+### Cards -> https://cards.mibess.com.br/
 
 # Instalação
 
