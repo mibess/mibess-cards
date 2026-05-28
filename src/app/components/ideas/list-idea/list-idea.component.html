@@ -21,18 +21,3 @@
   </div>
 </ng-template>
 
-<section class="container" style="display: none">
-  <header class="header-container d-flex">
-    <h2 class="ff-inter">Mural</h2>
-    <button routerLink="/create-idea" class="button">Add Idea</button>
-  </header>
-
-  <div
-    class="mural"
-    *ngIf="listCards && listCards.length > 0; else noListCards"
-  >
-    <div *ngFor="let card of listCards">
-      <app-card [card]="card"></app-card>
-    </div>
-  </div>
-</section>

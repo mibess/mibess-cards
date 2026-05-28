@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { Idea } from '../idea';
 import { IdeaService } from '../idea.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-edit-idea',
+  standalone: false,
   templateUrl: './edit-idea.component.html',
   styleUrls: ['./edit-idea.component.scss'],
 })
@@ -19,7 +20,8 @@ export class EditIdeaComponent {
   constructor(
     private service: IdeaService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private cdr: ChangeDetectorRef
   ) {}
 
   ngOnInit(): void {
@@ -28,6 +30,7 @@ export class EditIdeaComponent {
     if (code) {
       this.service.findByCode(code).subscribe((idea) => {
         this.idea = idea;
+        this.cdr.detectChanges();
       });
     }
   }

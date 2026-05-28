@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^21.2.13",
-    "@angular/cli": "^18.2.21",
+    "@angular/cli": "^21.2.13",
     "@angular/compiler-cli": "^21.2.14",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.6.0",
@@ -35,5 +35,9 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "^5.9.0"
+  },
+  "overrides": {
+    "uuid": "^11.1.1",
+    "webpack-dev-server": "^5.2.4"
   }
 }

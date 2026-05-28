@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { Idea } from '../idea';
 import { IdeaService } from '../idea.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-delete-idea',
+  standalone: false,
   templateUrl: './delete-idea.component.html',
   styleUrls: ['./delete-idea.component.scss'],
 })
@@ -19,7 +20,8 @@ export class DeleteIdeaComponent {
   constructor(
     private service: IdeaService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private cdr: ChangeDetectorRef
   ) {}
 
   ngOnInit(): void {
@@ -28,6 +30,7 @@ export class DeleteIdeaComponent {
     if (code) {
       this.service.findByCode(code).subscribe((idea) => {
         this.idea = idea;
+        this.cdr.detectChanges();
       });
     }
   }

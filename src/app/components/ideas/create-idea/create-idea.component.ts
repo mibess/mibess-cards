@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-idea',
+  standalone: false,
   templateUrl: './create-idea.component.html',
   styleUrls: ['./create-idea.component.scss'],
 })
